@@ -8,7 +8,7 @@ from streamlit_cropper import st_cropper
 from PIL import Image
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-model = tf.keras.models.load_model("saved_model/diseases.hdf5")
+model = tf.keras.models.load_model("saved_model/disease.hdf5")
 ### load file
 uploaded_file = st.file_uploader("Choose a image file")
 
