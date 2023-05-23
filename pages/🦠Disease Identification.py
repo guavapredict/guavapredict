@@ -12,9 +12,11 @@ model = tf.keras.models.load_model("saved_model/diseases.hdf5")
 ### load file
 uploaded_file = st.file_uploader("Choose a image file")
 
-map_dict = { 0:'LeafBlotch',
-             1:'Leaf Spot',
-             2:'NOT'
+map_dict = { 0:'Phytopthora',
+             1:'Guava_Good',
+             2:'Styler and Root',
+             3:'Scab',
+             4:'Guava_Bad'
             }
 realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
 box_color = st.sidebar.color_picker(label="Box Color", value='#0000FF')
