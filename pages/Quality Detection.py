@@ -60,6 +60,7 @@ if uploaded_file is not None:
         # if(map_dict [prediction] == 'turmericfingers'){
         #     Grade = 1
         # }
+        st.text(prediction)
         st.text(map_dict [prediction])
 
 
