@@ -13,7 +13,7 @@ st.title("Quality Detector")
 ### load file
 uploaded_file = st.file_uploader("Choose a image file")
 
-map_dict = { 0:'Not Good',
+map_dict = { 0:'Good',
              1:'Good',
              2:'Not Good',
              3:'Not Good',
