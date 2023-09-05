@@ -13,7 +13,8 @@ uploaded_file = st.file_uploader("Choose a image file")
 map_dict = {0:'Canker',
             1:'Dot',
             2:'Mummification',
-            3:'Rust'
+            3:'Rust',
+            4:'None'
             }
 
 
