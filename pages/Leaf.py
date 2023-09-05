@@ -33,6 +33,6 @@ if uploaded_file is not None:
     Genrate_pred = st.button("Leaf Predict")    
     if Genrate_pred:
         prediction = model.predict(img_reshape).argmax()
-        st.title("Predicted Dryness Level for the image is {}".format(map_dict [prediction]))
+        st.title("Predicted Type for the image is {}".format(map_dict [prediction]))
  
            
