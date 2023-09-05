@@ -17,7 +17,8 @@ map_dict = { 0:'Phytopthora',
              1:'Guava_Good',
              2:'Styler and Root',
              3:'Scab',
-             4:'Guava_Bad'
+             4:'Guava_Bad',
+             5:'None
             }
 realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
 box_color = st.sidebar.color_picker(label="Box Color", value='#0000FF')
