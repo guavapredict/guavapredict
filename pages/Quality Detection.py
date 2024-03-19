@@ -7,8 +7,11 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_in
 from streamlit_cropper import st_cropper
 from PIL import Image
 st.set_option('deprecation.showfileUploaderEncoding', False)
+custom_objects = {
+    'DepthwiseConv2D': tf.keras.layers.DepthwiseConv2D 
+}
 
-model = tf.keras.models.load_model("saved_model/quality.hdf5")
+model = tf.keras.models.load_model("saved_model/quality.hdf5",custom_objects=custom_objects)
 st.title("Quality Detector")
 ### load file
 uploaded_file = st.file_uploader("Choose a image file")
